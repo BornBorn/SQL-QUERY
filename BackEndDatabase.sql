@@ -133,5 +133,14 @@ CREATE TABLE [dbo].[Customer] (
     PRIMARY KEY CLUSTERED ([id] ASC)
 );
 
+CREATE TABLE [dbo].[OrderTracking] (
+    [stock_id] VARCHAR (50) NOT NULL,
+    [order_id] VARCHAR (50) NULL,
+    [received] INT          NULL,
+    [defect]   INT          NULL
+);
+
+
+
 
 
